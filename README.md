@@ -13,7 +13,7 @@ global transcript-level understanding is critical for accurate recognition and f
 
 
 <p align="center">
-<img src="images/interfinal.png" width=800></img>
+<img src="images/interfinal.jpg" width=800></img>
 </p>
 
 ## Running the experiment
