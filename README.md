@@ -40,15 +40,16 @@ Whisper-Medium achieved a 0.38, which is reasonable given the complexity of the 
 Now comes the punctuation results:
 
 <p align="center">
-<img src="images/punct.png" width=300></img>
+<img src="images/punct.png" width=600></img>
 </p>
 
 and semantic success per entity type:
 
 <p align="center">
-<img src="images/ner.png" width=400></img>
+<img src="images/ner.png" width=600></img>
 </p>
 
+Entities are evaluated according to their types. numerical types with CER and textual entities with Jaro-Wnkler distance.
 Please find more explanations of the results in the paper.
 ## Running the experiment
 
