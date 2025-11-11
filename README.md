@@ -26,7 +26,7 @@ We worked on SpokenWikipedia dataset,chosen for its long-audio and rich set of e
 Though multiword entities are provided by the dataset format, still we needed to extract single-word entities , also all the entity types. The below diagram shows the outline of burying entity tags to the transcript:
 
 <p align="center">
-<img src="images/revnorm.png" width=400></img>
+<img src="images/revnorm.png" width=600></img>
 </p>
 
 This pipeline is called the **ReverseNormalizer**, consisting of two modules, first one is **NER** to tag the entities with their types; the second module is called **EntityFormatter** which formats entities according to their types, calculates entity boundaries and inserts the tags into the transcript text.
