@@ -1,6 +1,6 @@
 # Whispering Context: Distilling Syntax and Semantics for Long Speech Transcripts
 
-This is the repo for IEEE ASRU 2025 paper [Whispering Context: Distilling Syntax and Semantics for Long Speech Transcripts](). You can reach the preprint at [Arxiv]().
+This is the repo for IEEE ASRU 2025 paper [Whispering Context: Distilling Syntax and Semantics for Long Speech Transcripts](). You can reach the preprint at [Arxiv](https://www.arxiv.org/abs/2508.13376).
 
 Our work offers a novel approach for blending transcript syntax&semantics into training chunks. We propose a novel approach that enhances ASR by distilling contextual knowledge from LLaMA models into Whisper. We measure syntactic&semantic success by measuring NER success, punctuation and capitalization success.
 
@@ -15,6 +15,18 @@ global transcript-level understanding is critical for accurate recognition and f
 <p align="center">
 <img src="images/interfinal.jpg" width=800></img>
 </p>
+
+## Data preparation
+We worked on SpokenWikipedia dataset,chosen for its long-audio and rich set of entity types and formats. The data came in aligned version and multiword entities are given by the XML format, so we processed **whole** transcripts such that they include entity tags like this:
+![Uploading asru-example.png…]()
+
+Though multiword entities are provided by the dataset format, still we needed to extract single-word entities , also all the entity types. The below diagram shows the outline of burying entity tags to the transcript:
+
+
+This pipeline is called the **ReverseNormalizer**, consisting of two modules, first one is **NER** to tag the entities with their types; the second module is called **EntityFormatter** which formats entities according to their types, calculates entity boundaries and inserts the tags into the transcript text.
+
+
+## Results
 
 ## Running the experiment
 
