@@ -49,7 +49,7 @@ and semantic success per entity type:
 <img src="images/ner.png" width=600></img>
 </p>
 
-Entities are evaluated according to their types. numerical types with CER and textual entities with Jaro-Wnkler distance.
+Entities are evaluated according to their types. numerical types with CER and textual entities with Jaro-Winkler distance.
 Please find more explanations of the results in the paper.
 ## Running the experiment
 
